@@ -8,7 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/icon-font.css">
+    <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
@@ -78,9 +78,25 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+
+                        <img src="img/nat-1-large.jpg" alt="Photo 1"
+                            srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            class="composition__photo composition__photo--p1">
+
+                        <img src="img/nat-2-large.jpg" alt="Photo 2" 
+                            srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            class="composition__photo composition__photo--p2">
+
+                        <img src="img/nat-3-large.jpg" alt="Photo 3"
+                            srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            class="composition__photo composition__photo--p3">
+
+                        <!-- <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                         <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
             </div>
@@ -298,7 +314,7 @@
             </div>
 
             <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn-text">Read all stories &rarr;</a>
+                <a href="#" class="btn-text">Read all stories &rarr;</a>
             </div>
 
         </section>
@@ -327,7 +343,7 @@
                                 <div class="form__radio-group">
                                     <input type="radio" id="small" class="form__radio-input" name="size">
                                     <label for="small" class="form__radio-label">
-                                        <span class="form__radio-button"></span> 
+                                        <span class="form__radio-button"></span>
                                         Small tour group
                                     </label>
                                 </div>
@@ -335,7 +351,7 @@
                                 <div class="form__radio-group">
                                     <input type="radio" id="large" class="form__radio-input" name="size">
                                     <label for="large" class="form__radio-label">
-                                        <span class="form__radio-button"></span> 
+                                        <span class="form__radio-button"></span>
                                         Large tour group
                                     </label>
                                 </div>
@@ -353,7 +369,13 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo">
+
+            <picture class="footer__logo">
+                <source media="(min-width: 37.5em )"
+                    srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full Logo">
+            </picture>
+
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -367,19 +389,20 @@
                         </li>
                         <li class="footer__item">
                             <a href="#" class="footer__link">Carrers</a>
-                        </li>         
+                        </li>
                         <li class="footer__item">
                             <a href="#" class="footer__link">Privacy Policy</a>
                         </li>
                         <li class="footer__item">
                             <a href="#" class="footer__link">Terms</a>
-                        </li>               
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="col-1-of-2">
                 <p class="footer__copyright">
-                    Built by <a href="http://github.com/danilodecanini" class="footer__link">@dev__dan</a> for a Advanced CSS pratice. Copyright &copy; by Danilo de Canini and Designed by Jonas Schmedtman
+                    Built by <a href="http://github.com/danilodecanini" class="footer__link">@dev__dan</a> for a
+                    Advanced CSS pratice. Copyright &copy; by Danilo de Canini and Designed by Jonas Schmedtman
                 </p>
             </div>
         </div>
@@ -394,9 +417,20 @@
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                    booking</h3>
                 <p class="popup__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus assumenda repellendus error aut! Commodi veritatis blanditiis aliquam hic aliquid reiciendis, magni perspiciatis animi esse ipsam rem perferendis velit. Voluptatum. Commodi veritatis blanditiis aliquam hic aliquid reiciendis, magni perspiciatis animi esse ipsam rem perferendis velit. Voluptatum. Commodi veritatis blanditiis aliquam hic aliquid reiciendis, magni perspiciatis animi esse ipsam rem perferendis velit. Voluptatum. Commodi veritatis blanditiis aliquam hic aliquid reiciendis, magni perspiciatis animi esse ipsam rem perferendis velit. Voluptatum. Commodi veritatis blanditiis aliquam hic aliquid reiciendis, magni perspiciatis animi esse ipsam rem perferendis velit. Voluptatum. Commodi veritatis blanditiis aliquam hic aliquid reiciendis, magni perspiciatis animi esse ipsam rem perferendis velit. Voluptatum. Commodi veritatis blanditiis aliquam hic aliquid reiciendis, magni perspiciatis animi esse ipsam rem perferendis velit. Voluptatum
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus assumenda repellendus
+                    error aut! Commodi veritatis blanditiis aliquam hic aliquid reiciendis, magni perspiciatis animi
+                    esse ipsam rem perferendis velit. Voluptatum. Commodi veritatis blanditiis aliquam hic aliquid
+                    reiciendis, magni perspiciatis animi esse ipsam rem perferendis velit. Voluptatum. Commodi veritatis
+                    blanditiis aliquam hic aliquid reiciendis, magni perspiciatis animi esse ipsam rem perferendis
+                    velit. Voluptatum. Commodi veritatis blanditiis aliquam hic aliquid reiciendis, magni perspiciatis
+                    animi esse ipsam rem perferendis velit. Voluptatum. Commodi veritatis blanditiis aliquam hic aliquid
+                    reiciendis, magni perspiciatis animi esse ipsam rem perferendis velit. Voluptatum. Commodi veritatis
+                    blanditiis aliquam hic aliquid reiciendis, magni perspiciatis animi esse ipsam rem perferendis
+                    velit. Voluptatum. Commodi veritatis blanditiis aliquam hic aliquid reiciendis, magni perspiciatis
+                    animi esse ipsam rem perferendis velit. Voluptatum
                 </p>
                 <a href="#" class="btn btn--green">Book now</a>
             </div>
